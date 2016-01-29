@@ -1,0 +1,19 @@
+﻿@model easypay.web.Models.Response
+
+@{
+    ViewBag.Title = "Response";
+}
+
+<h2>Easypay Response:</h2>
+
+<div class="well">
+    <h2>@Model.Title</h2>
+    <p>@Model.Message</p>
+    @using (Html.BeginForm("status", "easypay",FormMethod.Get))
+    {
+        <input type="hidden" name="paymentId" value="@Model.PaymentId">
+        <input type="hidden" name="reqId" value="@Model.ReqId">
+        <input type="submit" name="status" value="Get Payment Status" class="btn btn-primary">
+        <a href="./" class="btn btn-default">Cancel</a>
+    }
+</div>

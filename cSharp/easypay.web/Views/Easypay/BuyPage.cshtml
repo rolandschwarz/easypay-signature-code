@@ -1,0 +1,9 @@
+﻿@using System.Web.Mvc.Html
+
+<div class="container">
+    <h2>Easypay Sample Web App DEMO</h2>
+    @using (Html.BeginForm("buy", "easypay"))
+    {
+        <input class="btn btn-primary" type="submit" value="Buy" />
+    }
+</div>
