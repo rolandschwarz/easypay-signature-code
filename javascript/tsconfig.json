@@ -1,0 +1,44 @@
+{
+    "version": "1.5.0-alpha",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true
+    },
+    "filesGlob": [
+        "./**/*.ts",
+        "!./node_modules/**/*.ts"
+    ],
+    "files": [
+        "./easpay.lib/CheckoutPageRequest.ts",
+        "./easpay.lib/DirectPaymentRequest.ts",
+        "./easpay.lib/EasypayRequest.ts",
+        "./easpay.lib/Error.ts",
+        "./easpay.lib/IEasypayConfig.d.ts",
+        "./easpay.lib/IMessage.d.ts",
+        "./easpay.lib/IPaymentResponse.d.ts",
+        "./easpay.lib/IStatusResponse.d.ts",
+        "./easpay.lib/Signature.ts",
+        "./router.ts",
+        "./server.ts",
+        "./test/index.ts",
+        "./test/tests.d.ts",
+        "./typings/bluebird/bluebird.d.ts",
+        "./typings/express/express.d.ts",
+        "./typings/mime/mime.d.ts",
+        "./typings/moment/moment-node.d.ts",
+        "./typings/moment/moment.d.ts",
+        "./typings/node/node.d.ts",
+        "./typings/serve-static/serve-static.d.ts",
+        "./typings/tsd.d.ts"
+    ],
+    "exclude": [],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}

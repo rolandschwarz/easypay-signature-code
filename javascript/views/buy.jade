@@ -1,0 +1,12 @@
+extends _layout
+
+block content
+	h2 Easypay Sample Web App DEMO
+	form(action='/buy', method='get')
+		div.form-group
+			label(for='amount') Amount
+			input.form-control#amount(type='number', step="0.05", name='amount', required)
+		div.form-group
+			label(for='paymentInfo') Info on Payment
+			input.form-control#paymentInfo(type='text', name='paymentInfo', required)
+		input.btn.btn-primary(type='submit', value='Buy')

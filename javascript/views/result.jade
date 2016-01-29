@@ -1,0 +1,13 @@
+
+extends _layout
+
+block content
+	h2 Easypay Sample Web App DEMO
+	.well
+		h2!= title
+		p!= message
+		form(method='get', action='status')
+			input(type='hidden', name='paymentId', value='#{paymentId}')
+			input(type='hidden', name='reqId', value='#{reqId}')
+			input.btn.btn-primary(type='submit', name='status', value='Get Payment Status')
+			a.btn.btn-default(href='./') Cancel

@@ -1,0 +1,41 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title  - Easypay Sample Web App
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
+		style.
+			body {
+			padding-top: 50px;
+			padding-bottom: 20px;
+			}
+			/* Set padding to keep content from hitting the edges */
+			.body-content {
+			padding-left: 15px;
+			padding-right: 15px;
+			}
+			/* Set width on the form input elements since they're 100% wide by default */
+			input,
+			select,
+			textarea {
+			max-width: 280px;
+			}
+	body
+		.navbar.navbar-inverse.navbar-fixed-top
+			.container
+				.navbar-header
+					button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.navbar-brand(href='/') Easypay Sample Web App
+				.navbar-collapse.collapse
+					ul.nav.navbar-nav
+		.container.body-content
+			block content
+			hr
+			footer
+				p © 2016 - Easypay Sample Web App
+		script(src='https://code.jquery.com/jquery-2.2.0.min.js')
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")
